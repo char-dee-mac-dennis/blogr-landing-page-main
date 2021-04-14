@@ -13,7 +13,8 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="./css/blogr.css" >
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/blogr.css" />
 
     <title>Frontend Mentor | [Blogr]</title>
 
@@ -33,57 +34,68 @@
   <body>
     <div class="header-section">
       <header>
-        <nav>
-          <ul>
-            <li>
-              <a>Product</a>
-              <ul>
-                <li>Overview</li>
-                <li>Pricing</li>
-                <li>Marketplace</li>
-                <li>Features</li>
-                <li>Integrations</li>
-              </ul>
-            </li>
-            <li>
-              <a>Company</a>
-              <ul>
-                <li>About</li>
-                <li>Team</li>
-                <li>Blog</li>
-                <li>Careers</li>
-              </ul>
-            </li>
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid">
+            <a class="navbar-brand">Blogr</a>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav mb-2 mb-sm-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle">Product</a>
+                  <ul class="dropdown-menu">
+                    <li>Overview</li>
+                    <li>Pricing</li>
+                    <li>Marketplace</li>
+                    <li>Features</li>
+                    <li>Integrations</li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle">Company</a>
+                  <ul class="dropdown-menu">
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                  </ul>
+                </li>
 
-            <li>
-              <a>Connect</a>
-              <ul>
-                <li>Contact</li>
-                <li>Newsletter</li>
-                <li>LinkedIn</li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Connect</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>Contact</li>
+                    <li>Newsletter</li>
+                    <li>LinkedIn</li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
-
-          <div>
-            <button>Login</button>
-            <button>Sign Up</button>
+            </div>
+            <form class="login-form">
+              <button class="btn btn-primary">Login</button>
+              <button class="btn btn-primary">Sign Up</button>
+            </form>
           </div>
         </nav>
       </header>
 
-      <section>
+      <section class="intro-section container-md">
         <h2>A modern publishing platform</h2>
         <p>Grow your audience and build your online brand</p>
         <div>
-          <button>Start for Free</button>
-          <button>Learn More</button>
+          <button class="btn btn-primary">Start for Free</button>
+          <button class="btn btn-secondary">Learn More</button>
         </div>
       </section>
     </div>
 
-    <section>
-      <h2>Designed for the future</h2>
+    <section class="design-section container-md">
+      <h2>Designed for the future</h2>  
+      
       <article>
         <h3>Introducing an extensible editor</h3>
         <p>
@@ -105,7 +117,7 @@
       </article>
     </section>
 
-    <section>
+    <section class="infra-section container-md">
       <h2>State of the Art Infrastructure</h2>
       <p>
         With reliability and speed in mind, worldwide data centers provide the

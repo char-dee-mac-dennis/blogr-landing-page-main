@@ -1,0 +1,140 @@
+@import "fonts.scss";
+
+$primary-text: hsl(356, 100%, 66%);
+$primary-hover: hsl(355, 100%, 74%);
+$primary-headings: hsl(208, 49%, 24%);
+
+$background-gradient-very-light-red: hsl(13, 100%, 72%);
+$background-gradient-light-red: hsl(353, 100%, 62%);
+$background-gradient-dark-grey-blue: hsl(237, 17%, 21%);
+$background-gradient-desaturated-blue: hsl(237, 23%, 32%);
+
+$neutral-text: hsl(0, 0%, 100%);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass";
+  font-size: 16px;
+}
+
+nav > ul {
+  margin-top: 0;
+}
+
+.header-section {
+  color: $neutral-text;
+  padding: 15px;
+  background-image: url("../images/bg-pattern-intro.svg"),
+    linear-gradient(
+      90deg,
+      $background-gradient-very-light-red 10%,
+      $background-gradient-light-red 65%
+    );
+  background-size: 200%;
+  background-position: 18% 52%;
+  border-bottom-left-radius: 100px;
+  .navbar-brand,
+  .nav-item a {
+    color: $neutral-text;
+  }
+
+  .login-form {
+    margin-right: 150px;
+  }
+
+  .navbar {
+    margin-top: 30px;
+    .navbar-nav {
+      margin-left: 40px;
+    }
+  }
+
+  .navbar-brand {
+    margin-left: 150px;
+    font-size: 42px;
+    font-family: "Overpass";
+    font-weight: 600;
+  }
+
+  .btn-secondary,
+  .btn-primary {
+    background-color: transparent;
+    border: 0;
+    border-radius: 20px;
+  }
+
+  .btn-primary {
+    &:hover {
+      background-color: $primary-hover;
+      color: white;
+    }
+  }
+
+  .btn-secondary {
+    &:hover {
+      background-color: white;
+      color: $primary-hover;
+    }
+  }
+}
+
+.intro-section {
+  margin-top: 100px;
+  text-align: center;
+  height: 350px;
+
+  h2 {
+    font-family: "Ubuntu";
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  p {
+    font-family: "Overpass";
+    font-weight: 300;
+    font-size: 20px;
+  }
+}
+
+.design-section {
+  margin-top: 150px;
+  height: 1000px;
+  background-image: url("../images/illustration-editor-desktop.svg");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: 200% 25%;
+  padding-left: 50px;
+  margin-right: 0px;
+
+  h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 38px;
+  }
+
+  article {
+    h3 {
+      margin-top: 100px;
+    }
+    p {
+      margin-top: 25px;
+      width: 40%;
+    }
+  }
+}
+
+.infra-section {
+    background-image: url("../images/illustration-editor-desktop");
+    background-color: $background-gradient-desaturated-blue;
+    margin-right: 0px;
+    width:100%;
+    margin-left: 0px;
+    height: 400px;
+  h2 {
+    text-align: right;
+    font-weight: 600;
+    font-size: 38px;
+    color: white;
+  }
+}

@@ -1,4 +1,164 @@
-.header-section {
-  background-image: url("/images/bg-pattern-intro.svg");
-  background-color: hsl(356, 100%, 66%);
+@font-face {
+  font-family: "Overpass";
+  src: url("../fonts/Overpass-Light.ttf");
+  font-weight: 300;
 }
+@font-face {
+  font-family: "Overpass";
+  src: url("../fonts/Overpass-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Overpass";
+  src: url("../fonts/Overpass-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Overpass";
+  src: url("../fonts/Overpass-SemiBoldItalic.ttf");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass";
+  font-size: 16px;
+}
+
+nav > ul {
+  margin-top: 0;
+}
+
+.header-section {
+  color: white;
+  padding: 15px;
+  background-image: url("../images/bg-pattern-intro.svg"), linear-gradient(90deg, #ff8f70 10%, #ff3d54 65%);
+  background-size: 200%;
+  background-position: 18% 52%;
+  border-bottom-left-radius: 100px;
+}
+.header-section .navbar-brand,
+.header-section .nav-item a {
+  color: white;
+}
+.header-section .login-form {
+  margin-right: 150px;
+}
+.header-section .navbar {
+  margin-top: 30px;
+}
+.header-section .navbar .navbar-nav {
+  margin-left: 40px;
+}
+.header-section .navbar-brand {
+  margin-left: 150px;
+  font-size: 42px;
+  font-family: "Overpass";
+  font-weight: 600;
+}
+.header-section .btn-secondary,
+.header-section .btn-primary {
+  background-color: transparent;
+  border: 0;
+  border-radius: 20px;
+}
+.header-section .btn-primary:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+.header-section .btn-secondary:hover {
+  background-color: white;
+  color: #ff7a85;
+}
+
+.intro-section {
+  margin-top: 100px;
+  text-align: center;
+  height: 350px;
+}
+.intro-section h2 {
+  font-family: "Ubuntu";
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.intro-section p {
+  font-family: "Overpass";
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.design-section {
+  margin-top: 150px;
+  height: 1000px;
+  background-image: url("../images/illustration-editor-desktop.svg");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: 200% 25%;
+  padding-left: 50px;
+  margin-right: 0px;
+}
+.design-section h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 38px;
+}
+.design-section article h3 {
+  margin-top: 100px;
+}
+.design-section article p {
+  margin-top: 25px;
+  width: 40%;
+}
+
+.infra-section {
+  background-image: url("../images/illustration-editor-desktop");
+  background-color: #3f4164;
+  margin-right: 0px;
+  width: 100%;
+  margin-left: 0px;
+  height: 400px;
+}
+.infra-section h2 {
+  text-align: right;
+  font-weight: 600;
+  font-size: 38px;
+  color: white;
+}
+
+/*# sourceMappingURL=blogr.css.map */
